@@ -1,19 +1,22 @@
 //Task 1 У нас есть следующий объект:
-/* let user = {
+/* const user = {
   name: "John",
   age: 30
 };
+
 Проверьте, что этот объект не пустой и что в нем есть ключ age.  */
-/*let user = {
+/*const user = {
   name: "John",
   age: 30
 };
+
 alert('age' in user);*/
 
 /*function isEmpty() {
   for (let key in obj) {
     return false;
   }
+
   return true;
 }*/
 
@@ -23,7 +26,7 @@ alert('age' in user);*/
 id: 5,
 token: 12343423
 }; 
-const {id} = obj;
+const { id } = obj;
 console.log(id);*/
 
 //Task 3 Получите из объекта obj значение id и разместите его в константу userId.
@@ -33,7 +36,7 @@ id: 5,
 token: 12343423
 };
 
-const userId = obj["id"];
+const { id: userId } = obj;
 console.log(userId);*/
 
 
@@ -78,18 +81,20 @@ function exportStr() {
   console.log(city2.getCity()); */
 
   //Task 7
-const obj = {
+/*const obj = {
 
   method1: function() {
     return this;
-
   },
+
   method2: function() {
     return this;
   },
+
   method3: function() {
     console.log('метод 3');
   }
 };
-obj.method1().method2().method3();
+
+obj.method1().method2().method3();*/
 
