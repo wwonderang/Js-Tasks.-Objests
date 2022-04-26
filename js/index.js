@@ -98,3 +98,81 @@ function exportStr() {
 
 obj.method1().method2().method3();*/
 
+//Task
+/*const user = {};
+user.name = 'John';
+user.surname = 'Smith';
+user.name = 'Pete';
+delete user.name;*/
+
+//Task
+/*let schedule = {};
+function isEmpty(obj) {
+  for (let key in obj) {
+    return false;
+    }
+    return true;
+}
+alert( isEmpty(schedule) ); // true
+schedule["8:30"] = "get up";
+alert( isEmpty(schedule) ); // false*/
+
+//Task
+/*let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+};
+let sum = 0;
+for (let key in salaries) {
+  sum += salaries[key];
+}
+alert(sum);*/
+
+//Task
+/*let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+function multiplyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] == 'number') {
+      obj[key] *= 2;
+    }
+  }
+}
+multiplyNumeric(menu);*/
+
+//Task
+/*function Calculator() {
+  this.read = function() {
+    this.a = +prompt('a', 0);
+    this.b = +prompt('b', 0);
+  };
+  this.sum = function() {
+    return this.a + this.b;
+  };
+  this.mul = function() {
+    return this.a * this.b;
+  };
+}
+
+let calculator = new Calculator();
+calculator.read();
+alert(calculator.sum());
+alert(calculator.mul());*/
+
+//Task
+/*function Accumulator(startingValue) {
+  this.value = startingValue;
+  this.read = function() {
+    this.value += +prompt('Введите число', 0);
+    return this.value;
+  };
+}
+let accumulator = new Accumulator(1);
+accumulator.read();
+accumulator.read();
+alert(accumulator.value);*/
